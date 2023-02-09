@@ -1,9 +1,9 @@
 import { ethers } from 'ethers';
-import { CurrentConfig, JSONRPCURL } from './config';
+import { CurrentConfig, JSONRPCURL } from '../config';
 import { POOL_FACTORY_CONTRACT_ADDRESS } from './constant';
 // import { getProvider } from './providers';
 import { computePoolAddress } from '@uniswap/v3-sdk';
-import abi from '../abi/UniswapV3Pool.json';
+import abi from '../../abi/UniswapV3Pool.json';
 
 interface PoolInfo {
   token0: string;
